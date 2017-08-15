@@ -1,0 +1,23 @@
+{
+  "name": "get-average-color",
+  "version": "1.0.0",
+  "description": "Get the Average Color of an image from url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files \"index.html, js/custom.js\"",
+    "build": "cp node_modules/tachyons/css/tachyons.min.css css/"
+  },
+  "keywords": [
+    "color",
+    "hsl",
+    "hsv",
+    "rgb",
+    "image"
+  ],
+  "author": "Lucas Overland",
+  "license": "WTFPL",
+  "dependencies": {
+    "tachyons": "^4.8.0"
+  }
+}
