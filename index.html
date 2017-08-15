@@ -10,16 +10,37 @@
     <link rel="stylesheet" href="css/tachyons.min.css">
     <script defer type="text/javascript" src="js/custom.js"></script>
 </head>
-<body class="helvetica">
-  <h1>Get Average Color From Image</h1>
-  <input type="text" id="image-url" placeholder="Paste URL Here"/>
-<button id="submit-button">
-Grab Color
-</button>
-<div>
-<h3>
-Preview
-</h3>
-<img id="image-display" />
+<body class="avenir">
+  <header class="w-100 pa3 ph5-ns">
+    <h1 class="fw1">Get Average Color From Image</h1>
+  </header>
+  <main class="bt w-100 b--red pr5 pl5 pt1">
+    <p class="fw3">Note: Only works with images that have allowed <code class="green">Access-Control-Allow-Origin</code> on server.</p>
+    <div class=" flex-ns content-around-ns pt4">
+    <div class="w-100">
+    <p class="f5 tc">
+      <input type="text" id="image-url" placeholder="Paste URL Here" class="pa2 fw1 w-75"/>
+    </p>
+  <p class="tc">
+    <a id="submit-button" class="f6 f5-ns fw2 dib shadow-4 shadow-hover bb b--orange bw1 bg-white gray ph2 ph3-ns pv2 pv3-ns  no-underline">
+      Grab Color
+    </a>
+  </p>
+  <p class="pa2">
+  <h3 class="fw1 tc">COLOR: <span id="color-text">#</h3>
+    <div class="br-100 w4 h4 center" id="color-circle">
+    </div>
+  </p>
+</div>
+  <div class="w-100">
+    <h2 class="fw1">
+      Preview
+    </h2>
+    <p class="red dn" id="warning-message">Please paste an image url</p>
+    <p class="f3 dark-red dn" id="cors-message">Image server has not allowed access from this domain.</p>
+    <img id="image-display" />
+  </div>
+</div>
+</main>
 </body>
 </html>
