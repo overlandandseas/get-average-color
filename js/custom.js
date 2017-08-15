@@ -64,7 +64,8 @@
     evt.preventDefault()
     if (url)
     img.src = url
-  });
+  })
+
   inpt.addEventListener('keydown', evt => {
     if (evt.which === 13 && url)
     img.src = url
