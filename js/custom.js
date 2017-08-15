@@ -51,11 +51,12 @@
 		} else if (evt.target.value === '') {
 			warning.classList.add('dn')
 			corsmsg.classList.add('dn')
+			imgDisplay.src = ''
 		} else {
 			url = false
+			imgDisplay.src = ''
 			warning.classList.remove('dn')
 			corsmsg.classList.add('dn')
-			imgDisplay.src = ''
 		}
   })
   
