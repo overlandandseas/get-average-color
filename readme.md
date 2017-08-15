@@ -1,4 +1,4 @@
-# Get Average Color
+# [Get Average Color](http://getaveragecolor.com/)
 
 Must be viewed in modern browser.
 
